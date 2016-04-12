@@ -109,8 +109,9 @@ public class FileSystemPersistingCache<K, V> extends AbstractPersistingCache<K, 
 
     @Override
     protected List<String> directoryFor(K key) {
-        return Arrays.asList(key.toString());
+        return Arrays.asList(FilenameEncoder.encode(key.toString()));
     }
+    
 
     @Override
     @SuppressWarnings("unchecked")

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class KeyValuePair {
 
-    private static final String KEY_PREFIX = "key";
+    private static final String KEY_PREFIX = "http://example.com/key/";
     private static final String VALUE_PREFIX = "value";
 
     private final String key, value;
